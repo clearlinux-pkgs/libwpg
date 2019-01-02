@@ -1,3 +1,129 @@
+2019-01-01  David Tardon  <dtardon@redhat.com>  [a25f457e4b951a14d896fb8a25a4215d0dabb4c8]
+
+	prepare for a release
+
+
+2019-01-01  David Tardon  <dtardon@redhat.com>  [1e4bbfc043583d4783cf02f6544345ecc86872ed]
+
+	add comments describing color formats
+
+
+2019-01-01  David Tardon  <dtardon@redhat.com>  [a00691c1c746059bc1c971bf88e4744227127bd8]
+
+	read color components in the (assumed) right order
+
+
+2019-01-01  David Tardon  <dtardon@redhat.com>  [60e2626c6f43b031ebcb3364f2c666b945ac36fc]
+
+	tdf#78105 read color components in the right order
+
+
+2018-12-29  David Tardon  <dtardon@redhat.com>  [3c5fe7c421f077d0144fce1f037bc31246533fc9]
+
+	fix var. name
+
+
+2018-12-29  David Tardon  <dtardon@redhat.com>  [f6df54a33e887d7f1e4da5b01389e2efc041d7cf]
+
+	put the flags to a single line
+
+
+2018-12-27  David Tardon  <dtardon@redhat.com>  [ed38425ed63db1ee7d1873af88fedcf319578809]
+
+	move class into separate source files
+
+
+2018-12-26  David Tardon  <dtardon@redhat.com>  [72ba77d5a1e2311fd09fbca1144c2ebe62f41141]
+
+	drop unneeded include
+
+
+2018-12-26  David Tardon  <dtardon@redhat.com>  [7a2e37ba16aa4460544d784dba3527d090ce28aa]
+
+	do not duplicate build system defines
+
+
+2018-12-26  David Tardon  <dtardon@redhat.com>  [9c8feea054c3788a5737b139bb80bade77230b96]
+
+	sort includes
+
+
+2018-12-26  David Tardon  <dtardon@redhat.com>  [962b4d551037ce80e7e4b9457dedafd6be5eb3ec]
+
+	drop unneeded include
+
+
+2018-12-26  David Tardon  <dtardon@redhat.com>  [1e6f4c78618e6f7017b9f98377bfdd4d516ec231]
+
+	sort source files lexicographically
+
+
+2018-12-26  David Tardon  <dtardon@redhat.com>  [10142407994b939176d66695eb23f7c7efff1b5f]
+
+	check for __attribute__((visibility)) too
+
+
+2018-12-26  David Tardon  <dtardon@redhat.com>  [92b5d6d4ce028d1883c448b1e91f20360ad24601]
+
+	avoid self-assignment
+
+
+2018-12-26  David Tardon  <dtardon@redhat.com>  [a929126e16d8b210aec9610d63360475f23c18ac]
+
+	avoid self-assignment
+
+
+2018-12-26  David Tardon  <dtardon@redhat.com>  [75416ce38e0a6eca4ec555bf1789a7505c6d9084]
+
+	mark WPGBitmap::copyFrom as an impl. detail
+
+
+2018-05-05  David Tardon  <dtardon@redhat.com>  [a91d803f2878c9b6eb244fbcf9597e6fe236bdad]
+
+	disable werror by default
+
+
+2017-11-21  Miklos Vajna  <vmiklos@collabora.co.uk>  [cafbc0f82254406f61b522a41ccc95443b296a13]
+
+	libwpg_utils: end is overwritten in all branches later
+
+	So just initialize it to 0, anything complicated makes little sense.
+
+2017-11-01  Miklos Vajna  <vmiklos@collabora.co.uk>  [732691b13daf8328617b96586c3f9e7b4c9a8e00]
+
+	Use auto when declaring iterators and when initializing with a cast
+
+
+2017-10-31  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [85b9775f1c041b4cb4b49830079b04415c038ffd]
+
+	doxygen -u
+
+
+2017-10-28  David Tardon  <dtardon@redhat.com>  [f02e8c672c6565d1b18da19a5b33aa9abc89a52c]
+
+	drop MSVC project files obsoleted by move to C++11
+
+
+2017-10-28  David Tardon  <dtardon@redhat.com>  [afd75adf1204a5d6a782a51e63655aac146f2660]
+
+	save some vertical space
+
+
+2017-09-28  David Tardon  <dtardon@redhat.com>  [dac9846f95f0828004df2f41b1ec5de0067b0777]
+
+	only include what is needed
+
+
+2017-09-28  David Tardon  <dtardon@redhat.com>  [14989d98b049aba7718aaf36a9f3437a5f805266]
+
+	avoid output from fuzzer
+
+
+2017-09-12  David Tardon  <dtardon@redhat.com>  [eed6d81795f38a924a287da95b573ce2d7965d89]
+
+	bump release
+
+
 2017-09-12  David Tardon  <dtardon@redhat.com>  [586bffde12e16d95ea15b4e554ec8ef8d2ed39d2]
 
 	prepare for a release

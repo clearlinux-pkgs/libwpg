@@ -1,3 +1,9 @@
+0.3.2 - 0.3.3
+
+- Drop obsolete MSVC project files.
+- Use --disable-werror instead of --enable-werror as configure default.
+- Fix parsing of 24-bit RGB and 32-bit RGBA bitmaps in WPG2 files. (tdf#78105)
+
 0.3.1 - 0.3.2
 
 - Require C++11 for build.
