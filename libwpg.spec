@@ -4,7 +4,7 @@
 #
 Name     : libwpg
 Version  : 0.3.3
-Release  : 2
+Release  : 3
 URL      : https://dev-www.libreoffice.org/src/libwpg-0.3.3.tar.xz
 Source0  : https://dev-www.libreoffice.org/src/libwpg-0.3.3.tar.xz
 Summary  : Library for importing and converting Corel WordPerfect(tm) Graphics images.
