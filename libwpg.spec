@@ -4,10 +4,10 @@
 #
 Name     : libwpg
 Version  : 0.3.3
-Release  : 3
+Release  : 4
 URL      : https://dev-www.libreoffice.org/src/libwpg-0.3.3.tar.xz
 Source0  : https://dev-www.libreoffice.org/src/libwpg-0.3.3.tar.xz
-Summary  : Library for importing and converting Corel WordPerfect(tm) Graphics images.
+Summary  : Library for importing and converting Corel WordPerfect(tm) Graphics images
 Group    : Development/Tools
 License  : LGPL-2.1 MPL-2.0-no-copyleft-exception
 Requires: libwpg-bin = %{version}-%{release}
@@ -36,6 +36,7 @@ Group: Development
 Requires: libwpg-lib = %{version}-%{release}
 Requires: libwpg-bin = %{version}-%{release}
 Provides: libwpg-devel = %{version}-%{release}
+Requires: libwpg = %{version}-%{release}
 
 %description dev
 dev components for the libwpg package.
@@ -68,29 +69,35 @@ license components for the libwpg package.
 
 %prep
 %setup -q -n libwpg-0.3.3
+cd %{_builddir}/libwpg-0.3.3
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-export LANG=C
-export SOURCE_DATE_EPOCH=1546438244
+export LANG=C.UTF-8
+export SOURCE_DATE_EPOCH=1604610002
+export GCC_IGNORE_WERROR=1
+export CFLAGS="$CFLAGS -fno-lto "
+export FCFLAGS="$FFLAGS -fno-lto "
+export FFLAGS="$FFLAGS -fno-lto "
+export CXXFLAGS="$CXXFLAGS -fno-lto "
 %configure --disable-static
 make  %{?_smp_mflags}
 
 %check
-export LANG=C
+export LANG=C.UTF-8
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-make VERBOSE=1 V=1 %{?_smp_mflags} check
+make %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1546438244
+export SOURCE_DATE_EPOCH=1604610002
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/libwpg
-cp COPYING.LGPL %{buildroot}/usr/share/package-licenses/libwpg/COPYING.LGPL
-cp COPYING.MPL %{buildroot}/usr/share/package-licenses/libwpg/COPYING.MPL
+cp %{_builddir}/libwpg-0.3.3/COPYING.LGPL %{buildroot}/usr/share/package-licenses/libwpg/3704f4680301a60004b20f94e0b5b8c7ff1484a9
+cp %{_builddir}/libwpg-0.3.3/COPYING.MPL %{buildroot}/usr/share/package-licenses/libwpg/9744cedce099f727b327cd9913a1fdc58a7f5599
 %make_install
 
 %files
@@ -120,5 +127,5 @@ cp COPYING.MPL %{buildroot}/usr/share/package-licenses/libwpg/COPYING.MPL
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/package-licenses/libwpg/COPYING.LGPL
-/usr/share/package-licenses/libwpg/COPYING.MPL
+/usr/share/package-licenses/libwpg/3704f4680301a60004b20f94e0b5b8c7ff1484a9
+/usr/share/package-licenses/libwpg/9744cedce099f727b327cd9913a1fdc58a7f5599
