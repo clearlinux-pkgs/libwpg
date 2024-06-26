@@ -1,3 +1,106 @@
+2023-04-29  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [26d86af29ae3fa9171a2c0a80a7a979a03f55737]
+
+	Autoupdate configure.ac
+
+
+2023-04-29  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [9e64a61ac4ce0e3c237128c667718f83edae5b20]
+
+	Stuff-up a bit the README
+
+
+2023-04-29  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [91bd3ecbdf1be5b3c96b706440e45a17b73bdb5f]
+
+	Incomplete implementation of handlePenForeColor (bdo#155057) + leftovers of refactoring
+
+
+2023-04-17  ALONSO Laurent  <laurent.alonso@inria.fr>  [29244c855c26f6a7e699ffe8fa313b026a57c6d4]
+
+	configure.ac: try to correct a problem concerning HAVE_VISIBILITY which   was not defined when compiling for Windows...
+
+
+2022-01-09  David Tardon  <dtardon@redhat.com>  [54a8628804a00e6461f83cc1fe925eb82b8f7bf9]
+
+	WPG1: fix vertical position of text line
+
+
+2022-01-08  David Tardon  <dtardon@redhat.com>  [54e9e2ef918117a45d7b988ac758eff6742074ab]
+
+	WPG1: improve output of aligned text
+
+
+2022-01-02  David Tardon  <dtardon@redhat.com>  [039af7c8e9ad7bab4d121332654347e0713729ef]
+
+	WPG1: handle font size
+
+
+2022-01-01  David Tardon  <dtardon@redhat.com>  [e579102847e1ba721b6817e53d3b265cd4d119a7]
+
+	WPG1: parse more graphic text attrs
+
+
+2021-12-30  David Tardon  <dtardon@redhat.com>  [53704ebd69cfb4d1b03bd347ed8efe779e6109fb]
+
+	astyle
+
+
+2021-12-30  David Tardon  <dtardon@redhat.com>  [b2a51ede8ce8e667d55bcc274e393fbc023189fd]
+
+	WPG1: make text type 2 handler build again
+
+
+2021-12-30  David Tardon  <dtardon@redhat.com>  [9f666699f00d5e186537512b22c3b5ccc27fa381]
+
+	Add note for text position
+
+
+2021-12-30  David Tardon  <dtardon@redhat.com>  [9a700ed0cf48686bf9fbd10193ec7821b8d17a90]
+
+	WPG1: handle text color
+
+
+2021-12-29  David Tardon  <dtardon@redhat.com>  [213df19fcfbaf2b36d94670f644284d06fd39bae]
+
+	WPG1: parse some bits of text attrs record
+
+
+2021-12-29  David Tardon  <dtardon@redhat.com>  [1a4803695ddfc4ddb0ec81b834df948013052f91]
+
+	Drop pointless cast
+
+
+2021-12-29  David Tardon  <dtardon@redhat.com>  [2d180da8e5d6bc485ef1c52f4fade3266dab3998]
+
+	WPG1: handle line style
+
+
+2021-12-28  David Tardon  <dtardon@redhat.com>  [45bbf374289ebf86925985baff86de9733668d0f]
+
+	Drop a pointless cast
+
+
+2021-12-28  David Tardon  <dtardon@redhat.com>  [d0e94e4c6cd99b93e1f421fdbeccb26584c61842]
+
+	WPG1: parse page format record
+
+	... but don't do anything with it yet.
+
+2021-12-28  David Tardon  <dtardon@redhat.com>  [9bea91572ed3c21efde9a89a44487a1e501ca385]
+
+	WPG1: handle groups
+
+
+2019-01-21  Miklos Vajna  <vmiklos@collabora.com>  [38d9cf01224543188ea2c1dbc8670b997d06b848]
+
+	Fix too small loop variables
+
+	These loop variables had narrower type 'unsigned int' than the
+	iteration's upper bound 'unsigned long'.
+
+2019-01-01  David Tardon  <dtardon@redhat.com>  [11ec2b8e02b3c85b7e7760e3d5875a9f067e652f]
+
+	bump version
+
+
 2019-01-01  David Tardon  <dtardon@redhat.com>  [a25f457e4b951a14d896fb8a25a4215d0dabb4c8]
 
 	prepare for a release
